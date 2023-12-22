@@ -1,0 +1,95 @@
+.product-box {
+    display: flex;
+    gap: 0 30px;
+}
+
+.product {
+    &-minimal {
+        font: inherit;
+        font-family: 'Poppins', sans-serif;
+        display: grid;
+        gap: 0 20px;
+        margin-bottom: 15px;
+    }
+    &-minimal-title {
+        color: var(--eerie-black);
+        font-size: 20px;
+        font-weight: var(--weight-600);
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+        border-bottom: 3px solid var(--cultured);
+        margin-bottom: 30px;
+    }
+    &-minimal-content {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid var(--cultured);
+        padding: 15px;
+        -webkit-border-radius: var(--border-radius-md);
+        border-radius: var(--border-radius-md);
+    }
+    &-minimal-link {
+        display: block;
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
+    }
+    &-minimal-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-minimal-name {
+        color: var(--eerie-black);
+        font-size: 16px;
+        font-weight: var(--weight-600);
+        text-transform: capitalize;
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        margin-bottom: 5px;
+    }
+    &-minimal-name-link {
+        text-decoration: none;
+        color: black;
+    }
+    &-minimal-category {
+        text-decoration: none;
+        color: var(--salmon-pink);
+        font-weight: var(--weight-500);
+        text-transform: capitalize;
+        margin: 10px 0;
+    }
+    &-minimal-price {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        margin-top: 10px;
+    }
+    &-minimal-price-real {
+        font-weight: var(--weight-700);
+        font-size: 14px;
+    }
+    &-minimal-price del {
+        color: var(--sonic-silver);
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .product-box {
+        flex-direction: column;
+    }
+}
